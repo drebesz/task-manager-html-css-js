@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!--Início de doc HTML padrão, específica o tipo de DOC-->
+<html lang="pt"> <!--Início de doc HTML padrão, específica a linguagem da pag -->
+    <head> 
+      <meta charset="UTF-8" /> <!--Início de doc HTML padrão -->
+      <meta name="viewport"   content="width=device-width, initial-scale=1.0-" /> <!--Início de doc HTML padrão, específica que deve ser utilizado a largura do dispositivo no qual é realizado o acesso -->
+      <title>Lista de Tarefas</title> <!--Define o título da aba -->
+      <link rel="stylesheet" href="main.css"/> <!--Linka o html ao css -->
+      <script src="main.js"></script>
+    </head>
+    
+    <body>
+        <div><!--separa código por divisões em bloco de conteúdos -->
+            <h1 class = "title" id="page-title"></h1>
+            <ul id="list"></ul>
+        </div>
+        
+        <div>
+            <input 
+            type="text" 
+            id="taskname" 
+            name="taskname" 
+            placeholder="Nome da tarefa"/>
+            <button class = "add-task-button" onclick="addNewTask()">Adicionar Tarefa</button>
+        </div>
+
+    </body>
+
+
+    </html>

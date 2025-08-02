@@ -1,0 +1,80 @@
+body {
+   body {
+    background-color: bisque;                  /* Cor de fundo da página */
+    color: black;                              /* Cor padrão do texto */
+    font-family: monospace;                    /* Tipo de letra uniforme, estilo terminal */
+    padding: 24px;                             /* Espaçamento interno nas bordas da tela */
+    display: flex;                             /* Ativa o Flexbox (modelo de layout flexível) */
+    flex-direction: column;                    /* Coloca os elementos em coluna (um abaixo do outro) */
+    align-items: center;                       /* Centraliza horizontalmente os filhos */
+    justify-content: flex-start;               /* Alinha os filhos ao topo */
+    min-height: 100vh;                         /* Garante que o body ocupe 100% da altura da tela */
+}
+}
+
+.title {
+    font-size: 48px;                           /* Tamanho grande da fonte para o título */
+    margin-bottom: 24px;                       /* Espaço abaixo do título */
+    display: flex;                             /* Permite alinhamento de itens lado a lado */
+    align-items: center;                       /* Alinha verticalmente no centro */
+    gap: 12px;                                 /* Espaço entre o texto e os emojis */
+    
+}
+
+.list-item {
+    display: flex;                             /* Os elementos dentro do item (checkbox, texto, botão) ficam lado a lado */
+    align-items: center;                       /* Alinha os elementos verticalmente ao centro */
+    font-size: 20px;                           /* Tamanho da fonte do item da lista */
+    background-color: #fff5e1;                 /* Cor de fundo clara (um tom de bege) */
+    padding: 12px;                             /* Espaço interno em todos os lados */
+    border-radius: 8px;                        /* Cantos arredondados */
+    margin-bottom: 12px;                       /* Espaço entre os itens da lista */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   /* Sombra suave para destacar o item */
+    width: 100%;                               /* Ocupar toda a largura disponível */
+    max-width: 500px;                          /* Mas não ultrapassar 500px de largura */
+    justify-content: space-between;           /* Espaça os itens igualmente: um no início, outro no final */
+}
+
+
+input {
+height: 20px;                                   /* Altura do input */
+background-color: transparent;                  /*define a cor do Background como transparente*/
+color:black;                                  /*define a cor da fonte como preta*/
+border-color: transparent;                      /*define a cor da borda como transparente*/
+border-radius: 4px;                             /*define a circuferência da borda */
+
+
+}
+
+.add-task-button,
+.remove-button {
+    height: 30px;                              /* Altura do botão */
+    border-radius: 6px;                        /* Borda arredondada */
+    border: none;                              /* Remove a borda padrão */
+    padding: 0 12px;                           /* Espaço horizontal interno (esquerda e direita) */
+    background-color: #ffe8b5;                 /* Cor de fundo clara */
+    font-weight: bold;                         /* Texto em negrito */
+    cursor: pointer;                           /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.2s ease;    /* Animação suave quando a cor mudar no hover */
+
+}
+
+.add-task-button:hover,
+.remove-button:hover {
+    background-color: #ffd98c;       /* Cor mais escura quando o mouse passa por cima */
+}
+
+.task-checkbox {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+input[type="text"] {
+    height: 30px;                              /* Altura do campo de digitação */
+    padding: 0 8px;                            /* Espaço à esquerda e à direita dentro do campo */
+    background-color: #fffdf6;                 /* Cor de fundo bem clara */
+    border-radius: 4px;                        /* Cantos arredondados */
+    border: 1px solid #ddd;                    /* Borda cinza clara */
+    margin-bottom: 12px;                       /* Espaço abaixo do campo */
+    width: 240px;                              /* Largura do campo de texto */
+}
